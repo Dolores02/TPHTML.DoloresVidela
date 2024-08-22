@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 1 HTML</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0%;
+        }
+        header {
+            background-color: rgb(63, 77, 97);
+            text-align: left;
+            padding: 1px;
+            color: white;
+            
+        }
+        main {
+            padding: 30px;
+            background-color: rgba(167, 206, 225, 0.635);
+        }
+        section {
+            font-style: oblique;
+            margin-bottom: 10px;
+            background-color: rgb(181, 219, 236);
+            border: 2px solid rgb(5, 5, 35);
+        }
+        table {
+            width: 50%;
+            border-style: dotted;
+        }
+        th, td {
+            border: 3px solid rgb(104, 127, 176);
+            padding: 8px;
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Estructura Básica del Documento HTML</h1>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración del DOCTYPE, etiquetas de metadatos y un título. </p>
+    </div>
+    <div>   
+        <header>
+            <h2>Encabezados y propiedades del texto</h2>
+        </header>
+         <main>
+                <b>Este es un texto en negrita.</b> <br>
+                <i>Este es un texto en cursiva.</i> <br>
+                <u>Este es un texto subrayado.</u>
+         </main>
+        
+    </div>
+
+    <div>
+        <header>
+            <h2>Divisiones y Agrupaciones de Contenido</h1>
+        </header>
+        <main>
+            <section>
+                <h1>Sección 1</h1>
+                <p>Contenido de la primera seccion.</p>
+            </section>
+            <section>
+                <h1>Sección 2</h1>
+                <p>Contenido de la segunda seccion.</p>
+            </section>
+        </main> 
+    </div>
+
+    <div>
+        <header>
+        <h2>Enlaces y Listas</h2>
+        </header>
+        <main>
+        <div>
+            <nav>
+            <p>Visita nuestro <a href="https://www.google.com" target="_blank"> sitio web</a> para más información.
+            </nav>
+        </div>
+        <div>
+         <p>Enlaces Internos:</p>
+       
+            <nav>
+            <ul>
+            <li><a href="#Formulario">Ir a Formulario</a></li>
+            <li><a href="#Multimedia">Ir a Multimedia</a></li>
+            </ul>
+            </nav>
+            <p>Lista desordenada:</p>
+            <ul>
+            <li>Primer item de una lista desordenada.</li>
+            <li>Segundo item de una lista desordenada.</li>
+            </ul>
+            <p>Lista ordenada:</p>
+            <ol>
+            <li>Primer item de una lista ordenada.</li>
+            <li>Segundo item de una lista ordenada.</li>
+            </ol>
+        </div>
+    </div>
+    </main>
+    <div class="item" id="Multimedia"> 
+            <header>
+                <h2>Elementos Multimedia</h2>
+            </header>
+            <main>
+            <img src="https://i.blogs.es/0ca9a6/aa/1366_2000.webp" 
+            width="300px" height="200px"
+            alt="Es una imagen">
+    
+            <video src="https://cdn.pixabay.com/video/2019/03/21/22183-712840599_large.mp4" 
+            controls width="300px" height="200px" ></video>
+            
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls ></audio>
+    
+        </main>
+    </div>
+
+    <div>
+        <header>
+            <h2>Tablas</h2>
+        </header>
+        
+        <table>
+            
+            <thead>
+                <tr>
+                   <th>COLUMNA 1</th>
+                   <th>COLUMNA 2</th>
+                   <th>COLUMNA 3</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>FILA 1 CELDA 1</td>
+                    <td>FILA 1 CELDA 2</td>
+                    <td>FILA 1 CELDA 3</td>
+                </tr>
+                <tr>
+                    <td>FILA 2 CELDA 1</td>
+                    <td>FILA 2 CELDA 2</td>
+                    <td>FILA 2 CELDA 3</td>
+                </tr>
+                <tr>
+                    <td>FILA 3 CELDA 1</td>
+                    <td>FILA 3 CELDA 2</td>
+                    <td>FILA 3 CELDA 3</td>
+                </tr>
+            </tbody>
+         </table>
+    </div>
+    <div class="item" id="Formulario">
+        <header>
+            <h2>Formularios</h2>
+
+        </header>
+        <main>
+        <form>
+            <div>
+                <label>Nombre:</label>
+                <input type="text" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" placeholder="example@email.com.ar">
+            </div>
+            <div>
+                <label>Mensaje:</label>
+                <textarea placeholder=" "></textarea>
+            </div>
+            
+            <BUtton type="submit">ENVIAR</BUtton>
+        </main>
+    </div>
+
+</body>
+</html>
